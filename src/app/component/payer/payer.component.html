@@ -1,0 +1,74 @@
+<div class="container-form">
+
+    <div class="form">
+
+        <div class="message">
+            <h1>Añadir un nuevo pagador</h1>
+        </div>
+
+        <form (ngSubmit)="storePayer(formDirective)" [formGroup]="form" #formDirective="ngForm">
+                
+            <mat-form-field appearance="fill" class="sub-container">
+                <mat-label>Nombre y apellidos</mat-label>
+                <input type="text" matInput formControlName="name" placeholder="Introduce el nombre y apellidos">
+                <mat-error *ngIf="name.hasError('required')">
+                    El nombre y apellidos son <strong>obligatorios</strong>
+                </mat-error>
+            </mat-form-field>
+        
+            <mat-form-field appearance="fill" class="sub-container">
+                <mat-label>NIF</mat-label>
+                <input type="text" matInput formControlName="nif" placeholder="Introduce el nif">
+                <mat-error *ngIf="nif.hasError('required')">
+                    El NIF es <strong>obligatorio</strong>
+                </mat-error>
+            </mat-form-field>
+        
+            <mat-form-field appearance="fill" class="sub-container">
+                <mat-label>Dirección</mat-label>
+                <input type="text" matInput formControlName="address" placeholder="Introduce la dirección">
+                <mat-error *ngIf="address.hasError('required')">
+                    La dirección es <strong>obligatoria</strong>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="sub-container">
+                <mat-label>Número de piso</mat-label>
+                <input type="text" matInput formControlName="apartmentNumber" placeholder="Introduce el piso">
+            </mat-form-field>
+        
+            <mat-form-field appearance="fill" class="sub-container">
+                <mat-label>Código postal</mat-label>
+                <input type="text" matInput formControlName="zipCode" placeholder="Introduce el C.P.">
+                <mat-error *ngIf="zipCode.hasError('required')">
+                    El C.P. es <strong>obligatorio</strong>
+                </mat-error>
+            </mat-form-field>
+        
+            <mat-form-field appearance="fill" class="sub-container">
+                <mat-label>Localidad</mat-label>
+                <input type="text" matInput formControlName="city" placeholder="Introduce la Localidad">
+                <mat-error *ngIf="city.hasError('required')">
+                    La Localidad es <strong>obligatoria</strong>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="sub-container">
+                <mat-label>Ciudad</mat-label>
+                <input type="text" matInput formControlName="province" placeholder="Introduce la Ciudad">
+                <mat-error *ngIf="city.hasError('required')">
+                    La Ciudad es <strong>obligatoria</strong>
+                </mat-error>
+            </mat-form-field>
+        
+            <button mat-flat-button color="primary" [disabled]="form.invalid" class="sub-container-button">Aceptar</button>
+            
+        </form>
+
+    </div>    
+        
+</div>
+
+
+
+

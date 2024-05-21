@@ -1,0 +1,49 @@
+.container-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.form {
+    max-width: 500px;
+    margin: 0 50px;
+}
+
+.sub-container{
+    width: 100%;
+    font-size: 18px;
+    margin-top: 5px;
+    color: white;
+    
+}
+
+.sub-container-button{
+    width: 100%;
+    margin: 25px 0 10px 0;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.sub-container-button:disabled {
+    background-color: rgb(104, 109, 104)!important;
+}
+
+.error {
+    text-align: center;
+}
+
+.message {
+    width: 100%;
+    color: white;
+    margin: 35px 0 0 0;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.message h1 {
+    font-size: 45px;
+    line-height: 1.8;
+}

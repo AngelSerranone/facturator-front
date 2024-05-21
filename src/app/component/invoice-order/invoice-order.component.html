@@ -1,0 +1,18 @@
+<div class="container-form">
+
+    <div>
+
+        <div class="message">
+            <h1>Nueva orden de pago</h1>
+        </div>
+
+        <div class="file-selector">
+            <input type="file" (change)="onFileSelected($event)">
+            <p *ngIf="selectedFile">{{ selectedFile.name }}</p>
+        </div>
+
+        <button mat-flat-button (click)="onAccept()" [disabled]="!selectedFile" color="primary" class="sub-container-button">Aceptar</button>
+
+    </div>
+    
+</div>
