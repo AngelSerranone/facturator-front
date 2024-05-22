@@ -13,12 +13,14 @@ import { PayerComponent } from './component/payer/payer.component';
 import { InvoiceOrderComponent } from './component/invoice-order/invoice-order.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PayerListComponent } from './component/payer-list/payer-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PayerComponent,
-    InvoiceOrderComponent
+    InvoiceOrderComponent,
+    PayerListComponent
   ],
   imports: [
     HttpClientModule,

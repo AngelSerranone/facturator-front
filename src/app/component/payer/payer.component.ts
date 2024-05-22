@@ -18,7 +18,6 @@ export class PayerComponent implements OnInit {
   name: FormControl;
   nif: FormControl;
   address: FormControl;
-  apartmentNumber: FormControl;
   zipCode: FormControl;
   city: FormControl;
   province: FormControl;
@@ -33,7 +32,6 @@ export class PayerComponent implements OnInit {
     this.name = new FormControl ('', [Validators.required, CustomValidators.nameValidator]);
     this.nif = new FormControl ('', [Validators.required]);
     this.address = new FormControl ('', [Validators.required]);
-    this.apartmentNumber = new FormControl ('', []);
     this.zipCode = new FormControl ('', [Validators.required]);
     this.city = new FormControl('', [Validators.required]);
     this.province = new FormControl('', [Validators.required]);
@@ -43,7 +41,6 @@ export class PayerComponent implements OnInit {
       name: this.name,
       nif: this.nif,
       address: this.address,
-      apartmentNumber: this.apartmentNumber,
       zipCode: this.zipCode,
       city: this.city,
       province: this.province
@@ -58,7 +55,6 @@ export class PayerComponent implements OnInit {
       this.name.value, 
       this.nif.value, 
       this.address.value, 
-      this.apartmentNumber.value, 
       this.zipCode.value,
       this.city.value,
       this.province.value

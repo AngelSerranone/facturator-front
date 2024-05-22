@@ -4,7 +4,6 @@ export class Payer {
         private _name: string,
         private _nif: string,
         private _address: string,
-        private _apartmentNumber: string,
         private _zipCode: number,
         private _city: string,     
         private _province: string,     
@@ -29,12 +28,6 @@ export class Payer {
     }
     public set address(value: string) {
         this._address = value;
-    }
-    public get apartmentNumber(): string {
-        return this._apartmentNumber;
-    }
-    public set apartmentNumber(value: string) {
-        this._apartmentNumber = value;
     }
     public get zipCode(): number {
         return this._zipCode;

@@ -23,8 +23,7 @@ export class PayerService {
       name: payer.name,
       nif: payer.nif,
       address: payer.address,
-      apartmentNumber: payer.apartmentNumber,
-      zipCode: payer.zipCode,
+      zip_code: payer.zipCode,
       city: payer.city,
       province: payer.province
     }

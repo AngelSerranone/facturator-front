@@ -2,7 +2,6 @@ export class CompleteAddress {
 
     constructor(
         private _address: string,
-        private _apartmentNumber: string,
         private _zipCode: number,
         private _city: string,     
         private _province: string,
@@ -13,12 +12,6 @@ export class CompleteAddress {
     }
     public set address(value: string) {
         this._address = value;
-    }
-    public get apartmentNumber(): string {
-        return this._apartmentNumber;
-    }
-    public set apartmentNumber(value: string) {
-        this._apartmentNumber = value;
     }
     public get zipCode(): number {
         return this._zipCode;
