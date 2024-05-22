@@ -2,9 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    color: rgb(37, 37, 37);
   }
   
   input[type="file"] {
     margin-bottom: 10px;
+    color: rgb(37, 37, 37);
   }
   

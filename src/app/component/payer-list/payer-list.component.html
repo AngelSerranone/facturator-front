@@ -1,1 +1,23 @@
-<p>payer-list works!</p>
+<div class="container-form">
+
+    <div class="form">
+
+        <div class="message">
+            <h1>Pagadores</h1>
+        </div>
+
+        <mat-list>
+            <mat-list-item>{{ payerList[0].nif }} - {{ payerList[0].name }}</mat-list-item>
+            <div *ngFor="let payer of payerList.slice(1)">
+                <mat-divider></mat-divider>
+                <mat-list-item>{{ payer.nif }} - {{ payer.name }}</mat-list-item>
+            </div>
+        </mat-list>
+
+    </div>    
+        
+</div>
+
+
+
+

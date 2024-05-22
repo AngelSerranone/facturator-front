@@ -4,7 +4,9 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatButtonModule} from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider'
+import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -31,6 +33,8 @@ import { PayerListComponent } from './component/payer-list/payer-list.component'
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
+    MatListModule,
+    MatDividerModule,
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule

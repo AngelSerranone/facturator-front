@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Payer } from '../model/payer';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,10 +12,15 @@ export class PayerService {
     private http: HttpClient
   ) { }
 
+  /** Method to get all payers from database */
+  getAllPayers(): Observable<Payer[]> {
+    return this.http.get<Payer[]>('http://localhost:5005/payers');
+  }
+
   /** Method to store payers in database **/
   storePayer(payer: Payer): void {
     this.http.post('http://localhost:5005/add_payer', this.body(payer)).subscribe(data =>
-    console.log('Stored contact'));
+    console.log('Payer stored succesfully'));
   }
   
   /** Method to create the payer body */
